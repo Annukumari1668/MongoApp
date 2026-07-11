@@ -14,7 +14,7 @@ t1=st.text_input("Username")
 t2=st.text_input("Password",type="password")
 t3=st.text_input("Mobile number")
 t4=st.text_input("Email Id")
-t5=st.date_input("DOB")
+t5=st.data_input("DOB",value=date.today(),min_value=date(1900,1,1),max_value=date(2025,12,31))
 b= st.button("SIGN UP")
 if b:
     my.insert_one({"uname":t1,"password":t2,"mobile":str(t3),"email":t4,"dob":str(t5)});
