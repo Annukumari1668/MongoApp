@@ -1,6 +1,7 @@
 import streamlit as st
 import pymongo
 conn=pymongo.MongoClient("mongodb+srv://Annukumari:SK@MA800@annuwork.zo36zb2.mongodb.net/?appName=AnnuWork")
+
 mydb=conn["ojt"]
 my=mydb["user_info"]
 col1,col2,col3=st.columns(3)
